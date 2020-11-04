@@ -7,7 +7,7 @@ Simple Maven Project
 1. Login to Jenkins console
 1. Create *Jenkins job*, Fill the following details,
    - *Source Code Management:*
-      - Repository: `https://github.com/RaviBhagyoday/AWS-CICD-Maven.git`
+      - Repository: `https://github.com/Jaykanani2000/AWS-CI-CD.git`
       - Branches to build : `*/master`  
    - *Build:*
      - Root POM:`pom.xml`
@@ -43,6 +43,6 @@ Save and run the job now.
 Now job is running fine but to make this as Continuous Integration and Continuous Deployment Tod do that go back and modify job as below. 
   - Build Triggers
     - Poll SCM
-      - schedule `*/2 * * * *`
+      - schedule `*/1 * * * *`
 
 Save the job and modify the code in GitHub. Then you could see your job get trigger a build without any manual intervention.
